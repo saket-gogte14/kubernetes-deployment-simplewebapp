@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: assignment-deployment #Name of the Deployment which can be checked on Kubernetes
+spec:
+  selector:
+    matchLabels:
+      app: rubyhelloworld
+  replicas: 3 #Tells deployment to run 3 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: rubyhelloworld
+    spec:
+      containers:
+      - name: rubyhelloworld
+        image: docker.io/saket14/rubyhelloworld:1.0 #Pickup the image containing Ruby webservice
+        ports:
+        - containerPort: 80 #Exposing the 80 Port for the Application
