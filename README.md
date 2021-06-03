@@ -23,3 +23,10 @@ The solution comprises of below steps which will be detailed out in the next sec
     
 ![image](https://user-images.githubusercontent.com/68593337/120638697-144e2d80-c48e-11eb-8003-ed13ff93a58f.png)
 
+3) Setup the container yaml file to deploy on Kubernetes pointing to the docker hub registry image - Define the Deployment with the Container picking up the image uploaded on Docker Hub and setup three POD Replicas which will be Load Balancer service. - To monitor the containers Deploy Liveness and Readiness to keep checking the health of the application and readiness to serve the traffic
+
+4) Deploy the Application using the application yaml file on minikube Copy the Kubenetes Container Deployment file to your local drive from GitHub and run below command to deploy Kubernetes Application and Load Balancer Service:
+
+       kubectl apply -f ruby-hello-world-container.yml
+![image](https://user-images.githubusercontent.com/68593337/120640257-e10c9e00-c48f-11eb-8084-02ae353cf7ad.png)
+
