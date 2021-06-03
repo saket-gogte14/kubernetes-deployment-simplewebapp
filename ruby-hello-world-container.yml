@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: rubyhelloworld
-        image: docker.io/saket14/rubyhelloworld:1.0 #Pickup the image containing Ruby webservice
+        image: docker.io/saket14/rubyhelloworld:1.0 #Pickup the image uloaded on DockerHub containing Ruby webservice
         ports:
         - containerPort: 80 #Exposing the 80 Port for the Application
         livenessProbe:
@@ -22,7 +22,7 @@ spec:
             command: 
             - /bin/sh
             - -c
-            - curl -s "http://localhost:80" #Check if the URL returns a Well, hello there! thus confirming the website is up
+            - curl -s "http://localhost:80" #Check if the URL is responding thus confirming the website is alive
           initialDelaySeconds: 5 #Wait time for the application pod to come up
           periodSeconds: 5 #Resiliency time period to keep on checking probe
         readinessProbe:
@@ -30,6 +30,6 @@ spec:
             command: 
             - /bin/sh
             - -c
-            - curl -s "http://localhost:80/health" #Check if the URL returns a Well, hello there! thus confirming the website is up
+            - curl -s "http://localhost:80/health" #Check if the URL with path /health is responding thus confirming the website is healthy to acept traffic
           initialDelaySeconds: 5 #Wait time for the application pod to come up
           periodSeconds: 5 #Resiliency time period to keep on checking probe
