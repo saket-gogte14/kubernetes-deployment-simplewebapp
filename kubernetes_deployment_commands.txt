@@ -1,0 +1,4 @@
+- kubectl apply -f ruby-hello-world-container.yml
+- kubectl apply -f ruby-hello-world-service.yml
+- kubectl get pods
+- kubectl get services
