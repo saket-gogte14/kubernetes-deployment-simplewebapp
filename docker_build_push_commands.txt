@@ -1,2 +1,2 @@
-- docker build -t saket14/rubyhelloworld:1.0
+- docker build -t saket14/rubyhelloworld:1.0 .
 - docker push saket14/rubyhelloworld:1.0
