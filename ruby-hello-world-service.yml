@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rubyhelloworldservice
+spec:
+  selector:
+    app: rubyhelloworld #This service runs the Application which runs the docker image containing Ruby Webservice
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer #Load Balancer Service distributed the load on the multiple Pods
+
