@@ -30,3 +30,6 @@ The solution comprises of below steps which will be detailed out in the next sec
        kubectl apply -f ruby-hello-world-container.yml
 ![image](https://user-images.githubusercontent.com/68593337/120640257-e10c9e00-c48f-11eb-8084-02ae353cf7ad.png)
 
+5) Setup the service yaml file for load balancing the application on multiple Pods - Define the Deployment with the Service pointing to application deployed in Step 5. - Load Balancer is the service will balance the traffic on the pods
+
+7) 
