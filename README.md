@@ -38,3 +38,11 @@ The solution comprises of below steps which will be detailed out in the next sec
         
  ![image](https://user-images.githubusercontent.com/68593337/120641813-b885a380-c491-11eb-9105-8d3d59bf3b62.png)
 
+7) The Application will be Load Balanced on Three Pod Replicas . Check it with below command: “kubectl get pods” or “kubectl get pod -o wide” (for shorter screenshots haven’t used wide)
+
+![image](https://user-images.githubusercontent.com/68593337/120642165-2af68380-c492-11eb-950c-8a9cbd2e43f6.png)
+
+          kubectl get services (or -o wide)
+
+![image](https://user-images.githubusercontent.com/68593337/120642208-3ba6f980-c492-11eb-8d67-f9f73ed439e3.png)
+
