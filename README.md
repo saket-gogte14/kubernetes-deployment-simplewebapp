@@ -29,7 +29,7 @@ The solution comprises of below steps which will be detailed out in the next sec
        kubectl apply -f ruby-hello-world-container.yml
 ![image](https://user-images.githubusercontent.com/68593337/120640257-e10c9e00-c48f-11eb-8084-02ae353cf7ad.png)
 
-5) Setup the service yaml file for load balancing the application on multiple Pods - Define the Deployment with the Service pointing to application deployed in Step 5. - Load Balancer is the service will balance the traffic on the pods
+5) Setup the service yaml file for load balancing the application on multiple Pods - Define the Deployment with the Service pointing to application deployed in Step 5. - Load Balancer as a service will balance the traffic on the pods
 
 6) Deploy the Service using the application yaml file on minikube Copy the Kubenetes Service Deployment file to your local drive from GitHub and run below command to deploy Load Balancer Service :
 
@@ -53,9 +53,11 @@ The solution comprises of below steps which will be detailed out in the next sec
 
 ![image](https://user-images.githubusercontent.com/68593337/120643064-4f9f2b00-c493-11eb-803a-d83c908828fc.png)
 
-9) Checking the probes for below purposed : “Liveness” Probes are checking if the URL is responding without any error if the URL fails it will restart the container “Readiness” Probes are checking if the URL with health qualifier is responding without any error if it fails it will not accept any incoming Traffic
+9) Checking the probes for below purposes : 
+        - “Liveness” Probes are checking if the URL is responding without any error if the URL fails it will restart the container 
+        - “Readiness” Probes are checking if the URL with health qualifier is responding without any error if it fails it will not accept any incoming Traffic
 
-Below screenshot shows that the probes are doing their checks on the application containers:
+    Below screenshot shows that the probes are doing their checks on the application containers:
 
               kubectl describe pod assignment-deployment
 
