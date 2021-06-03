@@ -37,7 +37,9 @@ The solution comprises of below steps which will be detailed out in the next sec
         
  ![image](https://user-images.githubusercontent.com/68593337/120641813-b885a380-c491-11eb-9105-8d3d59bf3b62.png)
 
-7) The Application will be Load Balanced on Three Pod Replicas . Check it with below command: “kubectl get pods” or “kubectl get pod -o wide” (for shorter screenshots haven’t used wide)
+7) The Application will be Load Balanced on Three Pod Replicas . Check it with below command: 
+
+        kubectl get pods or kubectl get pod -o wide (for shorter screenshots haven’t used wide)
 
 ![image](https://user-images.githubusercontent.com/68593337/120642165-2af68380-c492-11eb-950c-8a9cbd2e43f6.png)
 
@@ -51,5 +53,9 @@ The solution comprises of below steps which will be detailed out in the next sec
 
 ![image](https://user-images.githubusercontent.com/68593337/120643064-4f9f2b00-c493-11eb-803a-d83c908828fc.png)
 
+9) Checking the probes for below purposed : “Liveness” Probes are checking if the URL is responding without any error if the URL fails it will restart the container “Readiness” Probes are checking if the URL with health qualifier is responding without any error if it fails it will not accept any incoming Traffic
 
+Below screenshot shows that the probes are doing their checks on the application containers:
+
+              kubectl describe pod assignment-deployment
 
