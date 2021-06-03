@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: rubyhelloworld
-        image: docker.io/saket14/rubyhelloworld:1.0 #Pickup the image uloaded on DockerHub containing Ruby webservice
+        image: docker.io/saket14/rubyhelloworld:1.0 #Pickup the image containing Ruby webservice
         ports:
         - containerPort: 80 #Exposing the 80 Port for the Application
         livenessProbe:
