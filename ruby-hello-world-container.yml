@@ -23,13 +23,13 @@ spec:
             - /bin/sh
             - -c
             - curl -s "http://localhost:80" #Check if the URL is responding thus confirming the website is alive
-          initialDelaySeconds: 5 #Wait time for the application pod to come up
-          periodSeconds: 5 #Resiliency time period to keep on checking probe
+          initialDelaySeconds: 20 #Wait time for the application pod to come up
+          periodSeconds: 10 #Resiliency time period to keep on checking probe
         readinessProbe:
           exec:
             command: 
             - /bin/sh
             - -c
             - curl -s "http://localhost:80/health" #Check if the URL with path /health is responding thus confirming the website is healthy to acept traffic
-          initialDelaySeconds: 5 #Wait time for the application pod to come up
-          periodSeconds: 5 #Resiliency time period to keep on checking probe
+          initialDelaySeconds: 20 #Wait time for the application pod to come up
+          periodSeconds: 10 #Resiliency time period to keep on checking probe
