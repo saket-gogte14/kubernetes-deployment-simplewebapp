@@ -67,7 +67,7 @@ The solution comprises of below steps which will be detailed out in the next sec
     And Deploy a Pipeline on Azure DevOps as below which will Build Docker Image , Push the Docker Image and Deploy to Kubernetes
     **As Azure DevOps will Charge you as per the Pipeline Runs and the usage of Docker/K8s tasks , I havent used it for this project**
     
-    ![image](https://user-images.githubusercontent.com/68593337/120675452-b5e77600-c4b2-11eb-9ce4-8dab4a82896b.png)
+    ![image](https://user-images.githubusercontent.com/68593337/120675780-02cb4c80-c4b3-11eb-936a-c459d1cb7f6b.png)
 
 
     ![image](https://user-images.githubusercontent.com/68593337/120675489-bed84780-c4b2-11eb-9efd-ef6ced394d3c.png)
