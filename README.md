@@ -8,8 +8,7 @@ Solution
 
 The solution comprises of below steps which will be detailed out in the next section. Following is the architecture diagram of the flow of steps :
 
-![image](https://user-images.githubusercontent.com/68593337/120637628-c2f16e80-c48c-11eb-958a-fdc6f81b4d0d.png)
-
+![image](https://user-images.githubusercontent.com/68593337/120642718-ddc6e180-c492-11eb-896d-afd58db069c4.png)
 
 1) Setup a Docker Image with a Docker File embedding the code of setting up the prerequisites for running the Ruby code which is injected to the images. Keep the Docker File on a directory with the Ruby Code and run below command. Keep the Tag same as that in Docker Hub:
 
