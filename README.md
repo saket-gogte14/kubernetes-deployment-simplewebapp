@@ -59,3 +59,5 @@ Below screenshot shows that the probes are doing their checks on the application
 
               kubectl describe pod assignment-deployment
 
+![image](https://user-images.githubusercontent.com/68593337/120650104-123e9b80-c49b-11eb-9a45-ee6672f0c31c.png)
+
