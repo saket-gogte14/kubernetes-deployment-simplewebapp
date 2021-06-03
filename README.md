@@ -32,4 +32,9 @@ The solution comprises of below steps which will be detailed out in the next sec
 
 5) Setup the service yaml file for load balancing the application on multiple Pods - Define the Deployment with the Service pointing to application deployed in Step 5. - Load Balancer is the service will balance the traffic on the pods
 
-7) 
+6) Deploy the Service using the application yaml file on minikube Copy the Kubenetes Service Deployment file to your local drive from GitHub and run below command to deploy Load Balancer Service :
+
+        kubectl apply -f ruby-hello-world-service.yml
+        
+ ![image](https://user-images.githubusercontent.com/68593337/120641813-b885a380-c491-11eb-9105-8d3d59bf3b62.png)
+
